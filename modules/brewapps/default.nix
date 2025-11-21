@@ -5,15 +5,19 @@
   ...
 }:
 let
-  cfg = config.apps;
+  cfg = config.brewapps;
 in
 {
-  options.apps = {
+  options.brewapps = {
     enableGhostty = lib.mkEnableOption "enable ghostty configuration" // {
+      default = false;
+    };
+    enableTheUnarchiver = lib.mkEnableOption "enable the-unarachiver configuration" // {
       default = false;
     };
   };
   imports = [
     ./ghostty-darwin.nix
+    ./the-unarchiver.nix
   ];
 }

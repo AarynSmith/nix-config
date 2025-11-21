@@ -18,9 +18,10 @@
 
   programs.zsh.enable = true;
 
-  imports = [ ../../modules/apps ];
+  imports = [ ../../modules/brewapps ];
 
-  apps.enableGhostty = true;
+  brewapps.enableGhostty = true;
+  brewapps.enableTheUnarchiver = true;
 
   environment.systemPackages = with pkgs; [
     # other tools you want

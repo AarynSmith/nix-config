@@ -5,7 +5,7 @@
   ...
 }:
 let
-  cfg = config.apps;
+  cfg = config.brewapps;
 in
 {
   config = lib.mkIf cfg.enableGhostty {
@@ -24,10 +24,8 @@ in
     #   };
     homebrew = {
       enable = true;
-      # If you don’t have taps/etc yet, you can also set them here.
       casks = [
-        "ghostty" # stable
-        # "ghostty@tip"  # or tip, if you prefer
+        "the-unarchiver"
       ];
     };
   };
