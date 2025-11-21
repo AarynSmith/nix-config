@@ -18,6 +18,10 @@
 
   programs.zsh.enable = true;
 
+  imports = [ ../../modules/apps ];
+
+  apps.enableGhostty = true;
+
   environment.systemPackages = with pkgs; [
     # other tools you want
   ];
@@ -42,13 +46,16 @@
     };
   };
   # Homebrew (optional, if you want to keep using it declaratively later)
-  # homebrew = {
-  #   enable = true;
-  #   onActivation = {
-  #     autoUpdate = true;
-  #     cleanup = "none";  # don't auto-remove non-declarative brew stuff
-  #   };
-  #   # taps = [ "homebrew/cask" ];
-  #   casks = [ "karabiner-elements" ];
-  # };
+  homebrew = {
+    enable = true;
+    onActivation = {
+      autoUpdate = true;
+      cleanup = "none"; # don't auto-remove non-declarative brew stuff
+    };
+    #   # taps = [ "homebrew/cask" ];
+    casks = [
+      # "karabiner-elements"
+      # "ghostty"
+    ];
+  };
 }

@@ -5,9 +5,11 @@
     LANG = "en_US.UTF-8";
   };
 
-  imports = [
-    ./modules/terminal
-  ];
+  imports = [ ./modules/terminal ];
+
+  terminal = {
+    enableStarship = true;
+  };
 
   programs.zsh = {
     enable = true;
@@ -22,20 +24,14 @@
     shellAliases = {
       # dc = "docker-compose";
       # dcu = "docker-compose up";
-      # dcd = "docker-compose down";
-
-      cat = "bat";
-
-      top = "btop";
-      htop = "btop";
-
+      # dcd = "docker-compose down"/Users/aaryn/.config/nix-config/home/darwin/aaryn.nix
       xyzzy = "echo 'Nothing happens'";
     };
   };
 
   home.packages = with pkgs; [
     # shared user-level tools
-    ripgrep
-    fd
+    # ripgrep
+    # fd
   ];
 }

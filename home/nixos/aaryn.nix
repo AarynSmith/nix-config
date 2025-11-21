@@ -6,4 +6,3 @@
 
   # Linux-specific user config
 }
-

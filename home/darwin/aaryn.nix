@@ -1,18 +1,33 @@
 { pkgs, ... }:
 
 {
+  home.stateVersion = "24.05";
+
   home.username = "aaryn";
   home.homeDirectory = "/Users/aaryn";
 
-  programs.zsh.enable = true;
+  home.packages = [
+    pkgs.nixfmt-rfc-style
+  ];
 
-  programs.git = {
-    enable = true;
-    userName = "AarynSmith";
-    userEmail = "4387096+AarynSmith@users.noreply.github.com";
-    #signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAlElxioTwGZpGuxlFOyF/JpaPulFc83B5DCViHML76s"
+  programs.zsh.shellAliases = {
+    nix-rebuild = "cd ~/.config/nix-config/; sudo nix run nix-darwin -- switch --flake .";
+    mcd = "test -d \"$1\" || mkdir \"$1\" && cd \"$1\"";
   };
+
+  programs.git.settings = {
+    credential.helper = "osxkeychain";
+    gpg.ssh.program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
+  };
+
+  xdg.configFile."ghostty/config".text = ''
+    theme = "Catppuccin Mocha"
+    background-blur-radius = 20
+    background-opacity = .85
+    unfocused-split-opacity = .75
+    clipboard-paste-protection = false
+    copy-on-select = true
+  '';
 
   # Mac-only packages / configs here
 }
-
