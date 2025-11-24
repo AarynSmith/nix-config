@@ -9,6 +9,9 @@ let
 in
 {
   options.terminal = {
+    enableAtuin = lib.mkEnableOption "enable atuin configuration" // {
+      default = true;
+    };
     enableGit = lib.mkEnableOption "enable git configuration" // {
       default = true;
     };
@@ -32,6 +35,7 @@ in
     };
   };
   imports = [
+    ./atuin.nix
     ./git.nix
     ./bat.nix
     ./btop.nix
