@@ -31,6 +31,12 @@
   system.defaults = {
     dock = {
       autohide = true;
+      largesize = 89;
+      magnification = true;
+      minimize-to-application = false;
+      mineffect = "scale";
+      mru-spaces = false;
+      orientation = "bottom";
       persistent-apps = [
         { app = "/Applications/Google Chrome.app"; }
         { app = "/Applications/Ghostty.app"; }
@@ -41,6 +47,17 @@
         { app = "/Applications/OrcaSlicer.app"; }
         { app = "/Users/aaryn/Applications/Chrome Apps.localized/fluidd 1.app"; }
       ];
+      persistent-others = [
+        { folder = "/Users/@username@/Downloads"; }
+      ];
+      show-process-indicators = true;
+      show-recents = false;
+      tilesize = 32;
+      wvous-br-corner = 1;
+      wvous-tr-corner = 12;
+    };
+    WindowManager = {
+      GloballyEnabled = false;
     };
     finder = {
       AppleShowAllExtensions = true;
@@ -53,10 +70,7 @@
       autoUpdate = true;
       cleanup = "none"; # don't auto-remove non-declarative brew stuff
     };
-    #   # taps = [ "homebrew/cask" ];
-    casks = [
-      # "karabiner-elements"
-      # "ghostty"
-    ];
+    taps = [ ];
+    casks = [ ];
   };
 }
