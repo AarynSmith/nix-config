@@ -27,6 +27,9 @@ in
     enableDust = lib.mkEnableOption "enable dust configuration" // {
       default = true;
     };
+    enableZoxide = lib.mkEnableOption "enable zoxide configuration" // {
+      default = true;
+    };
   };
   imports = [
     ./git.nix
@@ -35,5 +38,6 @@ in
     ./starship.nix
     ./eza.nix
     ./dust.nix
+    ./zoxide.nix
   ];
 }
