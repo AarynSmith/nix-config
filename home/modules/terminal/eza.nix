@@ -28,5 +28,4 @@ in
       la = "eza -laa";
     };
   };
-  # xdg.configFile."bat/syntaxes".source = null;
 }

@@ -15,5 +15,4 @@ in
       du = "dust";
     };
   };
-  # xdg.configFile."bat/syntaxes".source = null;
 }
