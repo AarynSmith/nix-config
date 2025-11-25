@@ -35,6 +35,11 @@
               "nix-command"
               "flakes"
             ];
+
+            # ssl-cert-file = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
+            # flake-registry = "https://raw.githubusercontent.com/NixOS/flake-registry/master/flake-registry.json";
+            flake-registry = "file:///etc/nix/flake-registry.json";
+
           };
 
           nixpkgs.config.allowUnfree = true;

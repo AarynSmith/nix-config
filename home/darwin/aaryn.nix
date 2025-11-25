@@ -11,7 +11,8 @@
   ];
 
   programs.zsh.shellAliases = {
-    nix-rebuild = "cd ~/.config/nix-config/; sudo nix run nix-darwin -- switch --flake .";
+    nix-rebuild = "cd ~/.config/nix-config/; sudo darwin-rebuild switch --flake .";
+    nix-registry = "sudo wget -O/etc/nix/flake-registry.json https://raw.githubusercontent.com/NixOS/flake-registry/master/flake-registry.json";
     mcd = "test -d \"$1\" || mkdir \"$1\" && cd \"$1\"";
   };
 
