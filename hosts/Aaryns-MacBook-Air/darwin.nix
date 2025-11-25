@@ -48,7 +48,7 @@
         { app = "/Users/aaryn/Applications/Chrome Apps.localized/fluidd 1.app"; }
       ];
       persistent-others = [
-        { folder = "/Users/@username@/Downloads"; }
+        { folder = "/Users/aaryn/Downloads"; }
       ];
       show-process-indicators = true;
       show-recents = false;
