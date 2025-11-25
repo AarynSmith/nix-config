@@ -16,7 +16,7 @@ in
         init.defaultbranch = "main";
         user.name = "AarynSmith";
         user.email = "4387096+AarynSmith@users.noreply.github.com";
-        signing.key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAlElxioTwGZpGuxlFOyF/JpaPulFc83B5DCViHML76s";
+        user.signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAlElxioTwGZpGuxlFOyF/JpaPulFc83B5DCViHML76s";
         gpg.format = "ssh";
         commit.gpgsign = true;
         commit.verbose = true;
