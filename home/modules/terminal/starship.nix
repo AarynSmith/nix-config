@@ -9,19 +9,23 @@ let
 in
 {
   config = lib.mkIf cfg.enableStarship {
+    programs.bash.enable = true;
+    programs.zsh.enable = true;
+
     programs.starship = {
       enable = true;
       enableZshIntegration = true;
+      enableBashIntegration = true;
       settings = {
         command_timeout = 30000;
         shell = {
           disabled = false;
           fish_indicator = "🐟";
           zsh_indicator = "zsh";
+          bash_indicator = "bsh";
         };
         character = {
-          # The name of the module we are configuring is "character"
-          success_symbol = "🚀"; # The "symbol" segment is being set to "➜"
+          success_symbol = "🚀";
           error_symbol = "💥";
         };
         battery = {
@@ -49,6 +53,15 @@ in
           "!bunfig.toml"
           "!bun.lockb"
         ];
+        nix_shell = {
+          symbol = "❄️";
+          impure_msg = ""; # "impure"
+          pure_msg = "pure";
+          format = "[$symbol$state (($name))]($style) ";
+        };
+        options = {
+          disabled = true;
+        }
       };
     };
   };
