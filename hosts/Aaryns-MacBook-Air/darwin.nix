@@ -20,9 +20,6 @@
 
   imports = [ ../../modules/brewapps ];
 
-  brewapps.enableGhostty = true;
-  brewapps.enableTheUnarchiver = true;
-
   environment.systemPackages = with pkgs; [
     # other tools you want
   ];
