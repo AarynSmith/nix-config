@@ -45,3 +45,12 @@ Temporary Items
 ### macOS Patch ###
 # iCloud generated files
 *.icloud
+
+
+.zlogin
+.zprofile
+.zshenv
+.zshrc
+brew-casks.txt
+brew-installed.txt
+brew-leaves.txt
