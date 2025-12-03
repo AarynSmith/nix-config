@@ -12,12 +12,16 @@ in
     enableAerospace = lib.mkEnableOption "enable aerospace configuration" // {
       default = false;
     };
+    enableHammerspoon = lib.mkEnableOption "enable hammerspoon configuration" // {
+      default = false;
+    };
     enableGhostty = lib.mkEnableOption "Enable Ghostty terminal configuration" // {
       default = false;
     };
   };
   imports = [
     ./aerospace.nix
+    ./hammerspoon.nix
     ./ghostty.nix
   ];
 }

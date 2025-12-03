@@ -22,4 +22,5 @@
 
   desktop.enableAerospace = true;
   desktop.enableGhostty = true;
+  desktop.enableHammerspoon = true;
 }
