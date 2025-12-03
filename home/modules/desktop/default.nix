@@ -18,10 +18,14 @@ in
     enableGhostty = lib.mkEnableOption "Enable Ghostty terminal configuration" // {
       default = false;
     };
+    enableIce = lib.mkEnableOption "Enable Ice configuration" // {
+      default = true;
+    };
   };
   imports = [
     ./aerospace.nix
     ./hammerspoon.nix
     ./ghostty.nix
+    ./ice.nix
   ];
 }

@@ -18,10 +18,14 @@ in
     enableTheUnarchiver = lib.mkEnableOption "enable the-unarachiver configuration" // {
       default = false;
     };
+    enableIce = lib.mkEnableOption "enable jordanbaird-ice configuration" // {
+      default = true;
+    };
   };
   imports = [
     ./ghostty-darwin.nix
     ./hammerspoon.nix
     ./the-unarchiver.nix
+    ./jordanbaird-ice.nix
   ];
 }
