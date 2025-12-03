@@ -59,9 +59,9 @@ in
           pure_msg = "pure";
           format = "[$symbol$state (($name))]($style) ";
         };
-        options = {
-          disabled = true;
-        }
+        # options = {
+        #   disabled = true;
+        # };
       };
     };
   };

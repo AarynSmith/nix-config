@@ -10,7 +10,7 @@ in
 {
   options.brewapps = {
     enableGhostty = lib.mkEnableOption "enable ghostty configuration" // {
-      default = false;
+      default = true;
     };
     enableTheUnarchiver = lib.mkEnableOption "enable the-unarachiver configuration" // {
       default = false;

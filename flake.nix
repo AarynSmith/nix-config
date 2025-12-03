@@ -74,7 +74,10 @@
             home-manager.users."aaryn" = import ./home/darwin/aaryn.nix;
 
             # Shared HM Modules
-            home-manager.sharedModules = [ ./home/common.nix ];
+            home-manager.sharedModules = [
+              ./home/common.nix
+              ./home/modules/desktop
+            ];
           }
         ];
       };
