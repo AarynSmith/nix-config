@@ -21,8 +21,13 @@ in
     enableIce = lib.mkEnableOption "Enable Ice configuration" // {
       default = true;
     };
+    enableVsCodium = lib.mkEnableOption "Enable VSCodium" // {
+      default = true;
+    };
+
   };
   imports = [
+    ./vscodium.nix
     ./aerospace.nix
     ./hammerspoon.nix
     ./ghostty.nix

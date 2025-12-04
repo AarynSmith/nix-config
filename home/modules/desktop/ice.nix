@@ -26,6 +26,7 @@ in
 
       # Optionally restart Ice so it picks up changes
       /usr/bin/killall Ice 2>/dev/null || true
+      /usr/bin/open -a Ice 2>/dev/null || true
     '';
 
   };

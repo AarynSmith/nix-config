@@ -21,8 +21,24 @@ in
     enableIce = lib.mkEnableOption "enable jordanbaird-ice configuration" // {
       default = true;
     };
+    enableSignal = lib.mkEnableOption "enable signal configuration" // {
+      default = true;
+    };
+    enableAlfred = lib.mkEnableOption "enable alfred configuration" // {
+      default = true;
+    };
+    enableOrcaslicer = lib.mkEnableOption "enable orcaslicer configuration" // {
+      default = true;
+    };
+    enableKarabiner = lib.mkEnableOption "enable karabiner-elements configuration" // {
+      default = true;
+    };
   };
   imports = [
+    ./karabiner-elements.nix
+    ./orcaslicer.nix
+    ./alfred.nix
+    ./signal.nix
     ./ghostty-darwin.nix
     ./hammerspoon.nix
     ./the-unarchiver.nix
