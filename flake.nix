@@ -48,6 +48,12 @@
             git
             # add other common CLI tools here
           ];
+          fonts.packages = with pkgs; [
+            nerd-fonts.fira-code
+            fira-code-symbols
+            monaspace
+            victor-mono
+          ];
         };
     in
     {
