@@ -51,7 +51,4 @@ Temporary Items
 .zprofile
 .zshenv
 .zshrc
-brew-casks.txt
-brew-installed.txt
-brew-leaves.txt
-brew-taps.txt
+brew-*.txt
