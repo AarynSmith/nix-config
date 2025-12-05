@@ -87,6 +87,32 @@
           }
         ];
       };
+      darwinConfigurations."Aaryns-MacBook-Pro" = darwin.lib.darwinSystem {
+        system = "aarch64-darwin"; # Apple Mac
+
+        modules = [
+          (mkCommon "aarch64-darwin")
+          ./hosts/Aaryns-MacBook-Pro/darwin.nix
+
+          # Home Manager integrated into nix-darwin
+          home-manager.darwinModules.home-manager
+          {
+            # Home Manager root options
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "hm-bak";
+
+            # Home Manager users
+            home-manager.users."aaryn" = import ./home/darwin/aaryn.nix;
+
+            # Shared HM Modules
+            home-manager.sharedModules = [
+              ./home/common.nix
+              ./home/modules/desktop
+            ];
+          }
+        ];
+      };
 
       #################
       ## Raspberry Pi 5
