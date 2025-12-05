@@ -1,0 +1,19 @@
+{
+    "workbench.sideBar.location": "right",
+    "vsix.sources": {
+        "vsix.extensions": [
+            "github:Textualize/tcss-vscode-extensions"
+        ],
+        "vsix.crons": {
+            "update": "0 12 * * *" // at 12PM, every day
+        }
+    },
+    "editor.renderWhitespace": "all",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "git.autofetch": true,
+    "application.shellEnvironmentResolutionTimeout": 30,
+    "editor.formatOnSave": true,
+    "nixEnvSelector.useFlakes": true,
+    "zenMode.hideLineNumbers": false,
+}
