@@ -7,6 +7,12 @@
 ``` bash
 > curl --proto '=https' -tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 ```
+After 2026 Determinite will stop distributing upstream nix required for nix-darwin. Use the following instead, or check [NixOS/experimental-nix-installer](https://github.com/NixOS/experimental-nix-installer) for details on how to install nix-upstream.
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf -L https://artifacts.nixos.org/experimental-installer | \
+  sh -s -- install
+```
 
 2. Close and reopen terminal and test nix
 
