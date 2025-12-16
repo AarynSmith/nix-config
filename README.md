@@ -25,5 +25,6 @@ Hello, world!
 
 ``` bash 
 git clone https://github.com/AarynSmith/nix-config.git ~/.config/nix-config/
-nix run nix-darwin -- switch --flake .
+#nix run nix-darwin -- switch --flake .
+sudo nix --extra-experimental-features nix-command --extra-experimental-features flakes run nix-darwin -- switch --flake .
 ```
