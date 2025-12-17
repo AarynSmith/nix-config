@@ -48,8 +48,20 @@ in
     enableFusion360 = lib.mkEnableOption "enable autodesk-fusion configuration" // {
       default = false;
     };
+    enableObsidan = lib.mkEnableOption "enable obsidian configuration" // {
+      default = true;
+    };
+    enableSyncthing = lib.mkEnableOption "enable syncthing-app configuration" // {
+      default = true;
+    };
+    enableKeepassXC = lib.mkEnableOption "enable keepassxc configuration" // {
+      default = true;
+    };
   };
   imports = [
+    ./keepassxc.nix
+    ./syncthing-app.nix
+    ./obsidian.nix
     ./autodesk-fusion.nix
     ./backblaze.nix
     ./chatgpt.nix
