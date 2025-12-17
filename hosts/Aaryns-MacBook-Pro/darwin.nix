@@ -16,6 +16,7 @@
     shell = pkgs.zsh;
   };
 
+  desktop.enableVsCodium = true;
   programs.zsh.enable = true;
 
   imports = [ ../../modules/brewapps ];
@@ -37,7 +38,7 @@
       persistent-apps = [
         { app = "/Applications/Google Chrome.app"; }
         { app = "/Applications/Ghostty.app"; }
-        { app = "/Applications/VSCodium.app"; }
+        { app = "/Applications/Nix Apps/VSCodium.app"; }
         { app = "/System/Applications/Stickies.app"; }
         { app = "/Users/aaryn/Applications/Autodesk Fusion.app"; }
         { app = "/Users/aaryn/Applications/Chrome Apps.localized/ChatGPT.app"; }

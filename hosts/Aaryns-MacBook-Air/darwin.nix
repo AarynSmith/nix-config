@@ -37,7 +37,7 @@
       persistent-apps = [
         { app = "/Applications/Google Chrome.app"; }
         { app = "/Applications/Ghostty.app"; }
-        { app = "/Applications/VSCodium.app"; }
+        { app = "/Applications/Nix Apps/VSCodium.app"; }
         { app = "/System/Applications/Stickies.app"; }
         { app = "/Users/aaryn/Applications/Autodesk Fusion.app"; }
         { app = "/Users/aaryn/Applications/Chrome Apps.localized/ChatGPT.app"; }

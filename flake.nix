@@ -67,6 +67,8 @@
         modules = [
           (mkCommon "x86_64-darwin")
           ./hosts/Aaryns-MacBook-Air/darwin.nix
+          ./modules/desktop/options.nix
+          ./modules/desktop/vscodium-darwin.nix
 
           # Home Manager integrated into nix-darwin
           home-manager.darwinModules.home-manager
@@ -93,6 +95,9 @@
         modules = [
           (mkCommon "aarch64-darwin")
           ./hosts/Aaryns-MacBook-Pro/darwin.nix
+          ./modules/desktop/options.nix
+          ./modules/desktop/vscodium-darwin.nix
+
 
           # Home Manager integrated into nix-darwin
           home-manager.darwinModules.home-manager
