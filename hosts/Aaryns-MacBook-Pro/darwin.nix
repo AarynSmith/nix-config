@@ -20,6 +20,7 @@
   programs.zsh.enable = true;
 
   imports = [ ../../modules/brewapps ];
+  brewapps.enableChatGPT = true;
 
   environment.systemPackages = with pkgs; [
     # other tools you want
@@ -41,9 +42,9 @@
         { app = "/Applications/Nix Apps/VSCodium.app"; }
         { app = "/System/Applications/Stickies.app"; }
         { app = "/Users/aaryn/Applications/Autodesk Fusion.app"; }
-        { app = "/Users/aaryn/Applications/Chrome Apps.localized/ChatGPT.app"; }
+        { app = "/Applications/ChatGPT.app"; }
         { app = "/Applications/OrcaSlicer.app"; }
-        { app = "/Users/aaryn/Applications/Chrome Apps.localized/fluidd 1.app"; }
+        { app = "/Users/aaryn/Applications/Chrome Apps.localized/fluidd.app"; }
       ];
       persistent-others = [
         { folder = "/Users/aaryn/Downloads"; }

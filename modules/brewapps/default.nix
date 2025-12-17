@@ -39,8 +39,12 @@ in
     enableChrome = lib.mkEnableOption "enable google-chrome configuration" // {
       default = true;
     };
+    enableChatGPT = lib.mkEnableOption "enable chatgpt configuration" // {
+      default = false;
+    };
   };
   imports = [
+    ./chatgpt.nix
     ./google-chrome.nix
     ./1password.nix
     ./karabiner-elements.nix
