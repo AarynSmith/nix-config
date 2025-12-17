@@ -21,7 +21,8 @@
 
   imports = [ ../../modules/brewapps ];
   brewapps.enableChatGPT = true;
-
+  brewapps.enableBackblaze = true;
+  brewapps.enableFusion360 = true;
   environment.systemPackages = with pkgs; [
     # other tools you want
   ];

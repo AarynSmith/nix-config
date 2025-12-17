@@ -45,8 +45,12 @@ in
     enableBackblaze = lib.mkEnableOption "enable backblaze configuration" // {
       default = false;
     };
+    enableFusion360 = lib.mkEnableOption "enable autodesk-fusion configuration" // {
+      default = false;
+    };
   };
   imports = [
+    ./autodesk-fusion.nix
     ./backblaze.nix
     ./chatgpt.nix
     ./google-chrome.nix
