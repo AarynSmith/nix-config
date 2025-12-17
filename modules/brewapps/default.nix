@@ -36,8 +36,12 @@ in
     enable1Password = lib.mkEnableOption "enable 1Password configuration" // {
       default = true; 
     };
+    enableChrome = lib.mkEnableOption "enable google-chrome configuration" // {
+      default = true;
+    };
   };
   imports = [
+    ./google-chrome.nix
     ./1password.nix
     ./karabiner-elements.nix
     ./orcaslicer.nix
