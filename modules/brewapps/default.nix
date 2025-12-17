@@ -34,7 +34,7 @@ in
       default = true;
     };
     enable1Password = lib.mkEnableOption "enable 1Password configuration" // {
-      default = true; 
+      default = true;
     };
     enableChrome = lib.mkEnableOption "enable google-chrome configuration" // {
       default = true;
@@ -42,8 +42,12 @@ in
     enableChatGPT = lib.mkEnableOption "enable chatgpt configuration" // {
       default = false;
     };
+    enableBackblaze = lib.mkEnableOption "enable backblaze configuration" // {
+      default = false;
+    };
   };
   imports = [
+    ./backblaze.nix
     ./chatgpt.nix
     ./google-chrome.nix
     ./1password.nix

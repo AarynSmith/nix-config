@@ -98,7 +98,6 @@
           ./modules/desktop/options.nix
           ./modules/desktop/vscodium-darwin.nix
 
-
           # Home Manager integrated into nix-darwin
           home-manager.darwinModules.home-manager
           {

@@ -20,8 +20,7 @@
     gpg.ssh.program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
   };
 
-  home.sessionVariables.SSH_AUTH_SOCK =
-      "/Users/aaryn/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock";
+  home.sessionVariables.SSH_AUTH_SOCK = "/Users/aaryn/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock";
 
   xdg.configFile."1Password/ssh/agent.toml".text = ''
     [[ssh-keys]]
@@ -31,7 +30,7 @@
     vault = "SSH Keys"
   '';
 
-  desktop.enableAerospace = true;
+  desktop.enableAerospace = false;
   desktop.enableGhostty = true;
   desktop.enableHammerspoon = true;
 }
