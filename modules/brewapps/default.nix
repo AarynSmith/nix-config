@@ -33,8 +33,12 @@ in
     enableKarabiner = lib.mkEnableOption "enable karabiner-elements configuration" // {
       default = true;
     };
+    enable1Password = lib.mkEnableOption "enable 1Password configuration" // {
+      default = true; 
+    };
   };
   imports = [
+    ./1password.nix
     ./karabiner-elements.nix
     ./orcaslicer.nix
     ./alfred.nix
