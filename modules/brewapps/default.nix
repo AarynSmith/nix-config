@@ -57,12 +57,15 @@ in
     enableSyncthing = lib.mkEnableOption "enable syncthing-app configuration" // {
       default = true;
     };
-
     enableMos = lib.mkEnableOption "enable mos configuration" // {
+      default = true;
+    };
+    enableRectangle = lib.mkEnableOption "enable Rectangle configuration" // {
       default = true;
     };
   };
   imports = [
+    ./Rectangle.nix
     ./mos.nix
     ./keepassxc.nix
     ./syncthing-app.nix
