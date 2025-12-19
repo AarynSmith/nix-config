@@ -36,6 +36,9 @@ in
     enable1Password = lib.mkEnableOption "enable 1Password configuration" // {
       default = true;
     };
+    enableKeepassXC = lib.mkEnableOption "enable keepassxc configuration" // {
+      default = false;
+    };
     enableChrome = lib.mkEnableOption "enable google-chrome configuration" // {
       default = true;
     };
@@ -54,11 +57,13 @@ in
     enableSyncthing = lib.mkEnableOption "enable syncthing-app configuration" // {
       default = true;
     };
-    enableKeepassXC = lib.mkEnableOption "enable keepassxc configuration" // {
+
+    enableMos = lib.mkEnableOption "enable mos configuration" // {
       default = true;
     };
   };
   imports = [
+    ./mos.nix
     ./keepassxc.nix
     ./syncthing-app.nix
     ./obsidian.nix

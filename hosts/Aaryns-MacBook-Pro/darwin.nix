@@ -23,6 +23,7 @@
   brewapps.enableChatGPT = true;
   brewapps.enableBackblaze = true;
   brewapps.enableFusion360 = true;
+  brewapps.enableKeepassXC = true;
   environment.systemPackages = with pkgs; [
     # other tools you want
   ];
