@@ -63,8 +63,12 @@ in
     enableRectangle = lib.mkEnableOption "enable Rectangle configuration" // {
       default = true;
     };
+    enableAffinity = lib.mkEnableOption "enable affinity configuration" // {
+      default = true;
+    };
   };
   imports = [
+    ./affinity.nix
     ./Rectangle.nix
     ./mos.nix
     ./keepassxc.nix
