@@ -46,7 +46,7 @@
 
           environment.systemPackages = with pkgs; [
             git
-            # add other common CLI tools here
+            direnv
           ];
           fonts.packages = with pkgs; [
             nerd-fonts.fira-code
