@@ -66,8 +66,12 @@ in
     enableAffinity = lib.mkEnableOption "enable affinity configuration" // {
       default = true;
     };
+    enableFastmail = lib.mkEnableOption "enable fastmail configuration" // {
+      default = false;
+    };
   };
   imports = [
+    ./fastmail.nix
     ./affinity.nix
     ./Rectangle.nix
     ./mos.nix

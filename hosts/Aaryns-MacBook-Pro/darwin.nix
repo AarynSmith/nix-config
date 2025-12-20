@@ -24,6 +24,8 @@
   brewapps.enableBackblaze = true;
   brewapps.enableFusion360 = true;
   brewapps.enableKeepassXC = true;
+  brewapps.enableFastmail = true;
+
   environment.systemPackages = with pkgs; [
     # other tools you want
   ];
