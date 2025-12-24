@@ -115,6 +115,19 @@
               ./home/modules/desktop
             ];
           }
+
+          {
+            homebrew = {
+              enable = true;
+
+              masApps = {
+                #https://apps.apple.com/us/app/toggl-track-hours-time-log/id1291898086
+                # Toggl Track: Hours & Time Log
+                "Toggl Track" = 1291898086;
+              };
+            };
+          }
+
         ];
       };
 
