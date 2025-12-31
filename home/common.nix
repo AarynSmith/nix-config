@@ -32,8 +32,9 @@
   home.packages = with pkgs; [
     # shared user-level tools
     ripgrep
-    # fd
+    fd
     wget
     curl
+    fzf
   ];
 }
