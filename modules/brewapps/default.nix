@@ -69,8 +69,12 @@ in
     enableFastmail = lib.mkEnableOption "enable fastmail configuration" // {
       default = false;
     };
+    enableRpi-Imager = lib.mkEnableOption "enable raspberry-pi-imager configuration" // {
+      default = true;
+    };
   };
   imports = [
+    ./raspberry-pi-imager.nix
     ./fastmail.nix
     ./affinity.nix
     ./Rectangle.nix
