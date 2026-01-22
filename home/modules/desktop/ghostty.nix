@@ -18,6 +18,7 @@ in
         unfocused-split-opacity = .75
         clipboard-paste-protection = false
         copy-on-select = true
+        bell-features = system
       '';
     })
 

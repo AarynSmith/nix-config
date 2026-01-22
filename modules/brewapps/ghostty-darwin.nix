@@ -25,7 +25,7 @@ in
     homebrew = {
       enable = true;
       casks = [
-        "ghostty"
+        "ghostty@tip"
       ];
     };
 
