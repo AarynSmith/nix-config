@@ -26,6 +26,7 @@
       # dcu = "docker-compose up";
       # dcd = "docker-compose down"/Users/aaryn/.config/nix-config/home/darwin/aaryn.nix
       xyzzy = "echo 'Nothing happens'";
+      ssh-switch = "ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedAlgorithms=+ssh-rsa ";
     };
   };
 
