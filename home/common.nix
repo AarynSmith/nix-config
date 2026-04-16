@@ -4,11 +4,14 @@
     EDITOR = "nano";
     LANG = "en_US.UTF-8";
   };
+  
+  home.sessionPath = [ "$HOME/.local/bin" ];
 
   imports = [ ./modules/terminal ];
 
   terminal = {
     enableStarship = true;
+    enableNvm = true;
   };
 
   programs.zsh = {

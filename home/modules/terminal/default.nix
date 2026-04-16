@@ -33,6 +33,7 @@ in
     enableZoxide = lib.mkEnableOption "enable zoxide configuration" // {
       default = true;
     };
+    enableNvm = lib.mkEnableOption "enable nvm configuration";
   };
   imports = [
     ./atuin.nix
@@ -43,5 +44,6 @@ in
     ./eza.nix
     ./dust.nix
     ./zoxide.nix
+    ./nvm.nix
   ];
 }
