@@ -72,6 +72,9 @@ in
     enableRpi-Imager = lib.mkEnableOption "enable raspberry-pi-imager configuration" // {
       default = true;
     };
+    enableVLC = lib.mkEnableOption "enable vlc configuration" // {
+      default = true;
+    };
   };
   imports = [
     ./raspberry-pi-imager.nix
@@ -95,5 +98,6 @@ in
     ./hammerspoon.nix
     ./the-unarchiver.nix
     ./jordanbaird-ice.nix
+    ./vlc.nix
   ];
 }
