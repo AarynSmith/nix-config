@@ -49,11 +49,9 @@
       persistent-apps = [
         { app = "/Applications/Google Chrome.app"; }
         { app = "/Applications/Ghostty.app"; }
-        { app = "/Applications/Nix Apps/VSCodium.app"; }
+        { app = "/Applications/Visual Studio Code.app"; }
         { app = "/Applications/Obsidian.app"; }
         { app = "/System/Applications/Stickies.app"; }
-        { app = "/Users/aaryn/Applications/Autodesk Fusion.app"; }
-        { app = "/Applications/ChatGPT.app"; }
         { app = "/Applications/OrcaSlicer.app"; }
         { app = "/Users/aaryn/Applications/Chrome Apps.localized/fluidd.app"; }
       ];
