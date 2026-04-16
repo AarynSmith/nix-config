@@ -19,6 +19,7 @@ in
         clipboard-paste-protection = false
         copy-on-select = true
         bell-features = system
+        macos-icon = "xray"
       '';
     })
 
